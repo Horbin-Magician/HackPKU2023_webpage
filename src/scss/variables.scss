@@ -1,0 +1,8 @@
+$decoration-color: #820010;
+$monokai-colors: #ff6188, #fc9867, #ffd866, #a9dc76, #78dce8, #ab9df2;
+$body-font-family: -apple-system, BlinkMacSystemFont, 'Noto Sans SC', Roboto,
+  'Helvetica', 'PingFang SC', sans-serif;
+
+:export {
+  decoration-color: $decoration-color;
+}
