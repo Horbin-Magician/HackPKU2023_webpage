@@ -1,6 +1,6 @@
 <template lang="pug">
 div
-    Section(main="Q&A" bg="Q&A")
+    Section(main="Q & A" bg="Q & A")
     v-card
         v-card-title.grey.lighten-3 Q：黑客马拉松是一个什么样的活动？
         v-container
