@@ -2,7 +2,7 @@
 div
   Section(main="特别鸣谢" bg="Sponsors")
   Subsection  冠名赞助
-  v-row.sponsor
+  v-row.mt-0.mb-4
     v-col.d-flex.align-center(cols="12" sm="4")
       v-img(:src="require('../assets/logo-kuaishou.jpg')" alt="快手公司的 Logo")
     v-col
@@ -12,26 +12,14 @@ div
         br
         | 在这里，发现真实有趣的世界
 
-  Subsection
-  v-row.sponsor
+  Subsection  特约赞助
+  v-row.mt-0.mb-4
     v-col.d-flex.align-center(cols="12" sm="4")
-      v-img(:src="require('../assets/logo-mi.jpg')" alt="小米公司的 Logo")
+      v-img(:src="require('../assets/logo-qingcloud.jpg')" alt="青云公司的 Logo")
     v-col
-      h2 小米
+      h2 青云 QingCloud
       v-col.text-line-height-2
-        | 小米公司正式成立于2010年4月，是一家专注于高端智能手机、互联网电视以及智能家居生态链建设的创新型科技企业。
-        br
-        |“让每个人都能享受科技的乐趣”是小米公司的愿景。小米公司应用了互联网开发模式开发产品的模式，用极客精神做产品，用互联网模式干掉中间环节，致力于让全球每个人，都能享用来自中国的优质科技产品。
-  v-row.sponsor
-    v-col.d-flex.align-center(cols="12" sm="4")
-      v-img(:src="require('../assets/logo-mi.jpg')" alt="小米公司的 Logo")
-    v-col
-      h2 青云
-      v-col.text-line-height-2
-        | 小米公司正式成立于2010年4月，是一家专注于高端智能手机、互联网电视以及智能家居生态链建设的创新型科技企业。
-        br
-        |“让每个人都能享受科技的乐趣”是小米公司的愿景。小米公司应用了互联网开发模式开发产品的模式，用极客精神做产品，用互联网模式干掉中间环节，致力于让全球每个人，都能享用来自中国的优质科技产品。
-
+        | 青云QingCloud （北京青云科技股份有限公司）是一家具有广义云计算服务能力的平台级混合云 ICT 厂商和服务商，以软件定义为核心，致力于为企业用户提供自主可控、中立可靠、性能卓越、灵活开放的云计算产品与服务。
 </template>
 
 <script>
@@ -47,16 +35,6 @@ export default {
 </script>
 
 <style scoped>
-.subsection::before {
-  content: '%';
-  background-color: #756ad6;
-}
-.subsection {
-  margin-bottom: 10px;
-}
-.sponsor {
-  margin-bottom: 1rem;
-}
 .text-line-height-2 {
   line-height: 2;
 }
