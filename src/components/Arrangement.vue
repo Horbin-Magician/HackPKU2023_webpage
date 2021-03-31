@@ -12,7 +12,7 @@ div
             |（详见下方 
             a(href="#Instruction") 选手须知
             |  ）
-    v-timeline-item(icon="mdi-forum" fill-dot :color="styles['decoration-color']" :large="!$vuetify.breakpoint.mobile")
+    v-timeline-item(icon="mdi-forum-outline" fill-dot :color="styles['decoration-color']" :large="!$vuetify.breakpoint.mobile")
       v-card
         v-card-title.grey.lighten-3 2021 年 5 月 5 日 至 5 月 7 日
         v-container
@@ -24,7 +24,7 @@ div
           v-list
             v-list-item 线上进行企业资源介绍与技术交流答疑 Workshop
             v-list-item 选手选定题目，利用相应材料在 48 小时内进行开发，完成相应要求并在线上提交通道关闭前提交相应文件
-    v-timeline-item(icon="mdi-play-box-outline" fill-dot :color="styles['decoration-color']" :large="!$vuetify.breakpoint.mobile")
+    v-timeline-item(icon="mdi-timer-sand-empty" fill-dot :color="styles['decoration-color']" :large="!$vuetify.breakpoint.mobile")
       v-card
         v-card-title.grey.lighten-3 2021 年 5 月 10 日 12:30 至 14:00
         v-container
