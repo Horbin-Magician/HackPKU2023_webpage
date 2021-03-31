@@ -17,16 +17,21 @@ v-app
   v-footer(padless)
       
     v-container
-      v-row: v-col.text-center 北京大学信息科学技术学院
-      v-row: v-col.text-center 共青团北京大学信息科学技术学院
-      v-row: v-col.text-center 2021 © 北京大学信息科学技术学院学生会 HackPKU 2021 组委会
-      v-row: v-col.text-h4.text-sm-h3.mt-4.mb-16.text-center.text-line-height-1_2 特别鸣谢
-      v-row: v-col.d-flex.flex-column.align-center
-              v-img.logo(:src="require('./assets/logo-kuaishou.jpg')" alt="快手公司的 Logo")
-      v-row: v-col.d-flex.flex-column.align-center
-              v-img.logo(:src="require('./assets/logo-kuaishou.jpg')" alt="快手公司的 Logo")
+      v-row
+        v-col
+          div.d-flex.flex-column.flex-sm-row.justify-center.align-center
+            v-img(:src="require('./assets/logo-eecs.webp')" alt="北大信科的 Logo" max-width="170px" height="150px" contain)
+            div.text-center.text-sm-left(style="line-height: 2") 北京大学信息科学技术学院
+              br
+              | 共青团北京大学信息科学技术学院
+              br
+              | 2021 © 北京大学信息科学技术学院学生会 HackPKU 2021 组委会
+            div.d-flex.flex-column.justify-center.align-center.ml-sm-4.mt-2.mt-sm-0
+              b.text-h6.mb-2 特别鸣谢
+              div.d-flex
+                v-img.logo(:src="require('./assets/logo-kuaishou.jpg')" alt="快手公司的 Logo" max-width="150px" max-height="75px" contain)
+                v-img.logo(:src="require('./assets/logo-qingcloud.jpg')" alt="青云公司的 Logo" max-width="150px" max-height="75px" contain)
       v-row: v-col.text-center: a(href="https://beian.miit.gov.cn/") 京ICP备16004990号
-
 </template>
 
 <script>
