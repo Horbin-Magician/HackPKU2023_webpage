@@ -1,10 +1,13 @@
 <template lang="pug">
 v-col.d-flex.flex-column.align-center
   v-img.logo(:src="require('../assets/logo.webp')" alt="HackPKU 2021 Logo" eager)
-  div.text-h2.text-sm-h1.mt-4.mb-16.text-center 第四届
-    br.hidden-md-and-up
-    | 北京大学
+  div.text-h2.text-sm-h1.mt-4.mb-16.text-center.text-line-height-1_2 第四届
     br.hidden-lg-and-up
+    |  北京大学
+    br.hidden-md-and-up
+    |  新工科
+    //br.hidden-lg-and-up
+    br
     | 黑客马拉松
   v-row
     v-btn(:color="styles['decoration-color']" dark large link
@@ -26,5 +29,8 @@ export default {
 .logo {
   width: 100%;
   max-width: 400px;
+}
+.text-line-height-1_2 {
+  line-height: 1.2;
 }
 </style>
