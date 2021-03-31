@@ -1,14 +1,14 @@
 <template lang="pug">
-div.section-container
-  div.bg {{ bg }}
-  div.main  {{ main }}
+.section-container
+  .bg {{ bg }}
+  .main {{ main }}
 </template>
 
 <script>
 export default {
   props: {
-    main: String,
-    bg: String,
+    main: { type: String, default: '' },
+    bg: { type: String, default: '' },
   },
 }
 </script>

@@ -1,17 +1,24 @@
 <template lang="pug">
 div
-  Section(main="往届风采" bg="Past Revision")
-  v-lazy(height="60vw" max-height="320px")
-    Swiper(:options="swiper_options" @click-slide="handleClickSlide")
-      div.swiper-slide(v-for="photo in photos" :key="photo.key")
-        img.swiper-lazy(:data-src="require(`../assets/photos/${photo.filename}`)" :alt="`关于 ${photo.description} 的照片`" )
-        div.swiper-lazy-preloader
-  v-dialog(v-model="display_photo" max-width="900")
-    v-card(v-if="display_photo")
-      v-img(:lazy-src="require(`../assets/photos/${dialog_photo.filename}`)" :src="require(`../assets/photos/hd/${dialog_photo.filename}`)" :alt="`关于 ${dialog_photo.description} 的高清照片`")
+  Section(main='往届风采' bg='Past Revision')
+  v-lazy(height='60vw' max-height='320px')
+    Swiper(:options='swiper_options' @click-slide='handleClickSlide')
+      .swiper-slide(v-for='photo in photos' :key='photo.key')
+        img.swiper-lazy(
+          :data-src='require(`../assets/photos/${photo.filename}`)'
+          :alt='`关于 ${photo.description} 的照片`'
+        )
+        .swiper-lazy-preloader
+  v-dialog(v-model='display_photo' max-width='900')
+    v-card(v-if='display_photo')
+      v-img(
+        :lazy-src='require(`../assets/photos/${dialog_photo.filename}`)'
+        :src='require(`../assets/photos/hd/${dialog_photo.filename}`)'
+        :alt='`关于 ${dialog_photo.description} 的高清照片`'
+      )
       //- v-card-title.text-center
       v-col.text-center.h3 {{ dialog_photo.description }}
-  v-col.text--secondary * 左右{{ $vuetify.breakpoint.mobile ? '划' : '拖' }}动查看更多，点击查看大图
+  v-col.text--secondary * 左右{{ $vuetify.breakpoint.mobile ? "划" : "拖" }}动查看更多，点击查看大图
 </template>
 
 <script>

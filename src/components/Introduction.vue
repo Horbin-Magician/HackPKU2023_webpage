@@ -1,6 +1,6 @@
 <template lang="pug">
 div
-  Section(main="活动介绍" bg="Introduction")
+  Section(main='活动介绍' bg='Introduction')
   v-col.text-line-height-2
     | 想体验一场别开生面的技术盛宴吗？
     br
@@ -19,10 +19,11 @@ div
     br
     | 除此之外，我们还将提供企业参访的机会与丰厚的奖品。HackPKU，等你来。
     br
-    | 由于疫情影响此次 HackPKU 赛事将在 
-    b 线上进行 
-    |  ，我们会将所有的资源、参赛手册、纪念品等通过邮寄的方式送到选手手中，为大家提供最好的线上参赛体验。
-
+    | 由于疫情影响此次 HackPKU 赛事将在
+    |
+    b 线上进行
+    |
+    | ，我们会将所有的资源、参赛手册、纪念品等通过邮寄的方式送到选手手中，为大家提供最好的线上参赛体验。
 </template>
 
 <script>
