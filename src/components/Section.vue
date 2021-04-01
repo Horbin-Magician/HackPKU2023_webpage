@@ -48,7 +48,7 @@ export default {
   text-decoration: underline;
 }
 .main::before {
-  content: '#';
+  content: '# ';
 }
 @media only screen and (max-width: 600px) {
   .bg {

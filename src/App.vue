@@ -9,10 +9,10 @@ v-app
       Introduction#Introduction
       Sponsors#Sponsors
       Awards#Awards
-      Photos#Photos
+      Photos#Revision
       Arrangement#Arrangement
-      Instruction#Instruction
-      Questions#Questions
+      Instruction#Instructions
+      Questions#QA
 
   v-footer(padless)
     v-container
@@ -32,27 +32,30 @@ v-app
               br
               | 2021 © 北京大学信息科学技术学院学生会 HackPKU 2021 组委会
             .d-flex.flex-column.justify-center.align-center.ml-sm-4.mt-2.mt-sm-0
-              b.text-h6.mb-2 特别鸣谢
+              b.text-h6.mb-2 独家冠名
               .d-flex.flex-wrap.justify-center.align-center
                 v-img.logo(
                   :src='require("./assets/logo-kuaishou.webp")'
                   alt='快手公司的 Logo'
                   max-width='150px'
-                  max-height='75px'
+                  height='75px'
                   contain
                 )
+            .d-flex.flex-column.justify-center.align-center.ml-sm-4.mt-2.mt-sm-0
+              b.text-h6.mb-2 特约赞助
+              .d-flex.flex-wrap.justify-center.align-center
                 v-img.logo(
                   :src='require("./assets/logo-qingcloud.webp")'
                   alt='青云公司的 Logo'
                   max-width='150px'
-                  max-height='75px'
+                  height='75px'
                   contain
                 )
                 v-img.logo(
                   :src='require("./assets/logo-tuyoo.webp")'
                   alt='途游公司的 Logo'
                   max-width='150px'
-                  max-height='75px'
+                  height='75px'
                   contain
                 )
       v-row: v-col.text-center: a(href='https://beian.miit.gov.cn/') 京ICP备16004990号
@@ -88,12 +91,12 @@ export default {
 
   data: () => ({
     fragments: [
-      { fragment: '#Sponsors', name: '赞助商' },
+      { fragment: '#Sponsors', name: '特别鸣谢' },
       { fragment: '#Awards', name: '奖项设置' },
-      { fragment: '#Photos', name: '往届风采' },
+      { fragment: '#Revision', name: '往届风采' },
       { fragment: '#Arrangement', name: '赛程安排' },
-      { fragment: '#Instruction', name: '选手须知' },
-      { fragment: '#Questions', name: 'Q & A' },
+      { fragment: '#Instructions', name: '选手须知' },
+      { fragment: '#QA', name: '问题解答' },
     ],
   }),
 }
