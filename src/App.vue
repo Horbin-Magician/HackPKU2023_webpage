@@ -33,17 +33,24 @@ v-app
               | 2021 © 北京大学信息科学技术学院学生会 HackPKU 2021 组委会
             .d-flex.flex-column.justify-center.align-center.ml-sm-4.mt-2.mt-sm-0
               b.text-h6.mb-2 特别鸣谢
-              .d-flex
+              .d-flex.flex-wrap.justify-center.align-center
                 v-img.logo(
-                  :src='require("./assets/logo-kuaishou.jpg")'
+                  :src='require("./assets/logo-kuaishou.webp")'
                   alt='快手公司的 Logo'
                   max-width='150px'
                   max-height='75px'
                   contain
                 )
                 v-img.logo(
-                  :src='require("./assets/logo-qingcloud.jpg")'
+                  :src='require("./assets/logo-qingcloud.webp")'
                   alt='青云公司的 Logo'
+                  max-width='150px'
+                  max-height='75px'
+                  contain
+                )
+                v-img.logo(
+                  :src='require("./assets/logo-tuyoo.webp")'
+                  alt='途游公司的 Logo'
                   max-width='150px'
                   max-height='75px'
                   contain
