@@ -1,5 +1,5 @@
 <template lang="pug">
-h1: slot
+h1.mt-4.mb-2: slot
 </template>
 
 <style lang="scss" scoped>

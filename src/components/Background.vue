@@ -1,7 +1,7 @@
 <template lang="pug">
-div.background
-  div.decoration-block(v-for="_ in Array(20).keys()" :key="_")
-  div.floating-char(v-for="char in floating_chars" :key="char") {{ char }}
+.background
+  .decoration-block(v-for='_ in Array(20).keys()' :key='_')
+  .floating-char(v-for='char in floating_chars' :key='char') {{ char }}
 </template>
 
 <script>
