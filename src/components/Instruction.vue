@@ -1,6 +1,6 @@
 <template lang="pug">
 div
-  Section(main='选手须知' bg='Instruction')
+  Section(main='选手须知' bg='Instructions')
   v-row
     v-col
       Subsection 报名细则

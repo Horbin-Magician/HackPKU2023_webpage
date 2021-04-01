@@ -4,7 +4,7 @@ h1.mt-4.mb-2: slot
 
 <style lang="scss" scoped>
 h1::before {
-  content: '%';
+  content: '% ';
   color: white;
   background-color: $decoration-color;
 }

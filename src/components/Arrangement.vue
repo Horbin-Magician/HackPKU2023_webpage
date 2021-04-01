@@ -13,8 +13,10 @@ div
         v-container
           v-col
             | 选手自行组队报名，依据模板填写简历并提交至
+            |
             a(href='mailto:hackpku2021@126.com') hackpku2021@126.com
             | （详见下方
+            |
             a(href='#Instruction') 选手须知
             |
             | ）

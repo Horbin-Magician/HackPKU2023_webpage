@@ -5,7 +5,7 @@ v-app-bar(app :color='`rgba(245, 245, 245, ${scrollY})`' elevate-on-scroll)
     style='width: 100%'
   )
     v-app-bar-title
-      v-btn(text href='#') {{ logo }} - 网页开发中
+      v-btn(text href='#') {{ logo }}
     v-menu(offset-y)
       template(v-slot:activator='{ on, attrs }')
         v-btn(icon v-bind='attrs' v-on='on' aria-label='导航菜单')
@@ -19,7 +19,7 @@ v-app-bar(app :color='`rgba(245, 245, 245, ${scrollY})`' elevate-on-scroll)
         ) {{ fragment.name }}
   v-container.d-flex(v-else style='display: flex')
     v-app-bar-title
-      v-btn(text href='#') {{ logo }} - 网页开发中
+      v-btn(text href='#') {{ logo }}
     v-spacer
     v-btn(
       v-for='fragment in fragments'

@@ -1,7 +1,7 @@
 <template lang="pug">
 div
-  Section(main='奖项设置' bg='Awards Setting')
-  Subsection 奖池设置
+  Section(main='奖项设置' bg='Award Settings')
+  Subsection 现金奖池
   v-row 
     v-col(cols='12' sm='4')
       v-card
@@ -31,25 +31,12 @@ div
         v-container: v-col.text-h5 第七名至第十名
     v-col(cols='12' sm='4')
       v-card
-        v-card-title.special.white--text.d-flex.justify-end HACKPKU 2021 定制纪念品
+        v-card-title.special.white--text.d-flex.justify-end HackPKU 2021 定制纪念品
         v-container: v-col.text-h5 所有参赛者
 
   v-col.text--secondary * 排名奖品按队伍分发，纪念品按参赛者分发
 
   Subsection 参赛福利
-  //- v-row
-  //-   v-col(cols="12" sm="4")
-  //-     v-card
-  //-       v-card-title.special.white--text.d-flex.justify-end 参访赛事赞助企业的机会
-  //-         div.glow
-  //-       v-container: v-col.text-h5 所有参赛者
-  //-   v-col(cols="12" sm="4")
-  //-     v-card
-  //-       v-card-title.special.white--text.d-flex.justify-end HACKPKU 2021 定制纪念品
-  //-         div.glow
-  //-       v-container: v-col.text-h5 所有参赛者
-  //- v-col
-  //-   div.text--secondary * 企业参访名单以最终与企业的协调为准
   v-col.text-h5 所有参加比赛的选手都将有机会获得参访赛事赞助企业的机会
 </template>
 

@@ -15,13 +15,17 @@ v-col.d-flex.flex-column.align-center
     br
     | 黑客马拉松
   v-row
-    v-btn(
-      :color='styles["decoration-color"]'
-      dark
-      large
-      link
-      href='https://7465-test-5gifm62t1406c277-1253429680.tcb.qcloud.la/HackPKU2021_%E7%AE%80%E5%8E%86%E6%A8%A1%E6%9D%BF.docx?sign=dcf779f161e6c57a8a27421ae13aa617&t=1616781245'
-    ) 下载报名简历模板
+    v-col
+      .text-h3.text-center 本活动由快手独家赞助
+  v-row
+    v-col
+      v-btn(
+        :color='styles["decoration-color"]'
+        dark
+        large
+        link
+        href='https://7465-test-5gifm62t1406c277-1253429680.tcb.qcloud.la/HackPKU2021_%E7%AE%80%E5%8E%86%E6%A8%A1%E6%9D%BF.docx?sign=dcf779f161e6c57a8a27421ae13aa617&t=1616781245'
+      ) 下载报名简历模板
 </template>
 
 <script>
