@@ -16,7 +16,10 @@ v-col.d-flex.flex-column.align-center
     | 黑客马拉松
   v-row
     v-col
-      .text-h3.text-center 本活动由快手独家赞助
+      .text-h4.text-sm-h3.text-center
+        | 本活动
+        br.hidden-sm-and-up
+        | 由快手独家赞助
   v-row
     v-col
       v-btn(

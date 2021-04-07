@@ -58,6 +58,13 @@ v-app
                   height='75px'
                   contain
                 )
+                v-img.logo(
+                  :src='require("./assets/logo-hulu.webp")'
+                  alt='Hulu 公司的 Logo'
+                  max-width='150px'
+                  height='75px'
+                  contain
+                )
       v-row: v-col.text-center: a(href='https://beian.miit.gov.cn/') 京ICP备16004990号
 </template>
 
