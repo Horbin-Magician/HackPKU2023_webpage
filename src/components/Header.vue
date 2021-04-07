@@ -1,7 +1,7 @@
 <template lang="pug">
 v-app-bar(app :color='`rgba(245, 245, 245, ${scrollY})`' elevate-on-scroll)
   .d-flex.justify-space-between.align-center(
-    v-if='$vuetify.breakpoint.xs'
+    v-if='$vuetify.breakpoint.xs || $vuetify.breakpoint.sm'
     style='width: 100%'
   )
     v-app-bar-title
