@@ -31,7 +31,7 @@ div
         v-container: v-col.text-h5 第七名至第十名
     v-col(cols='12' sm='4')
       v-card
-        v-card-title.special.white--text.d-flex.justify-end HackPKU 2021 定制纪念品
+        v-card-title.special.white--text.d-flex.justify-end HackPKU 定制纪念品
         v-container: v-col.text-h5 所有参赛者
 
   v-col.text--secondary * 排名奖品按队伍分发，纪念品按参赛者分发

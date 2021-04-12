@@ -19,10 +19,32 @@ div
       //- v-card-title.text-center
       v-col.text-center.h3 {{ dialog_photo.description }}
   v-col.text--secondary * 左右{{ $vuetify.breakpoint.mobile ? "划" : "拖" }}动查看更多，点击查看大图
+  v-row
+    v-col.col-12.col-md-6
+      Number(
+        :number='["40+", "800+"]'
+        description='过去 3 届 HackPKU 中，共有来自全国各地 40 余所高校的 800 余支各具特色的队伍报名并参加比赛，HackPKU 得到广大选手的一致好评'
+      )
+    v-col.col-6.col-md-3
+      Number(
+        :number='["30+"]'
+        description='30 余家企业曾给予 HackPKU 大力支持，为选手提供技术产品、开发框架、参访安排等'
+      )
+    v-col.col-6.col-md-3
+      Number(
+        :number='["10 万"]'
+        description='共有 30 余支队伍的 100 余名同学获奖，历届 HackPKU 累计奖金超过￥100,000'
+      )
+    v-col.col-12
+      Number(
+        :number='["1"]'
+        description='HackPKU 2021 第 1 次线上举办，活动奖金更丰厚，活动形式更多样，更多“第一”，等你来创造……'
+      )
 </template>
 
 <script>
 import Section from './Section'
+import Number from './Number'
 import { Swiper, SwiperSlide } from 'vue-awesome-swiper'
 import 'swiper/css/swiper.css'
 
@@ -31,6 +53,7 @@ import photos from '../assets/photos/photos.json'
 export default {
   components: {
     Section,
+    Number,
     Swiper,
     SwiperSlide,
   },
