@@ -9,7 +9,7 @@ div
       :large='!$vuetify.breakpoint.mobile'
     )
       v-card
-        v-card-title.grey.lighten-3 2021 年 4 月 2 日 至 4 月 15 日
+        v-card-title.grey.lighten-3 2021 年 4 月 2 日 至 4 月 23 日
         v-container
           v-col
             | 选手自行组队报名，依据模板填写简历并提交至
