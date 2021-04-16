@@ -28,7 +28,23 @@ v-col.d-flex.flex-column.align-center
         large
         link
         href='https://7465-test-5gifm62t1406c277-1253429680.tcb.qcloud.la/HackPKU2021_%E7%AE%80%E5%8E%86%E6%A8%A1%E6%9D%BF.docx?sign=dcf779f161e6c57a8a27421ae13aa617&t=1616781245'
-      ) 下载报名简历模板
+      )
+        v-icon(left) mdi-download
+        | 报名简历模板
+    v-col
+      v-dialog(v-model='qrcode' max-width='300')
+        template(v-slot:activator='{ on, attrs }')
+          v-btn(
+            :color='styles["decoration-color"]'
+            dark
+            large
+            v-bind='attrs'
+            v-on='on'
+          )
+            v-icon(left) mdi-wechat
+            | 官方微信群
+        v-card
+          v-img(:src='require("../assets/group-qrcode.webp")' alt='官方微信群二维码')
 </template>
 
 <script>
@@ -36,7 +52,7 @@ import styles from '../scss/export.scss'
 
 export default {
   data() {
-    return { styles }
+    return { styles, qrcode: false }
   },
 }
 </script>
