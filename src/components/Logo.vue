@@ -34,6 +34,15 @@ v-col.d-flex.flex-column.align-center
         v-card
           v-card-title 错误
           v-card-text {{ downloadDialogErrInfo }}
+    v-col
+      v-btn(
+        :color='styles["decoration-color"]'
+        dark
+        large
+        href='https://7465-test-5gifm62t1406c277-1253429680.tcb.qcloud.la/%E6%8A%80%E6%9C%AF%E8%AE%B2%E5%BA%A7.zip?sign=ed7d382a65d3877bb04658a8356f5797&t=1620460562'
+      )
+        v-icon(left) mdi-video
+        | 企业技术答疑回放
 </template>
 
 <script>
