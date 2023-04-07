@@ -3,6 +3,9 @@ node_modules
 /dist
 /assets
 
+/.yarn
+.yarnrc.yml
+
 
 # local env files
 .env.local
