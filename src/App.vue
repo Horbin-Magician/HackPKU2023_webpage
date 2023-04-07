@@ -7,12 +7,14 @@ v-app
     v-container
       Logo
       Introduction#Introduction
+      Announcement#Announcement
       Sponsors#Sponsors
       Awards#Awards
       Photos#Revision
       Arrangement#Arrangement
       Instruction#Instructions
       Questions#QA
+      MessageBoard#MessageBoard
 
   v-footer(padless)
     v-container
@@ -73,12 +75,14 @@ import Header from './components/Header'
 import Background from './components/Background'
 import Logo from './components/Logo'
 import Introduction from './components/Introduction'
+import Announcement from './components/Announcement'
 import Sponsors from './components/Sponsors'
 import Awards from './components/Awards'
 import Photos from './components/Photos'
 import Arrangement from './components/Arrangement'
 import Instruction from './components/Instruction'
 import Questions from './components/Questions'
+import MessageBoard from './components/MessageBoard'
 
 export default {
   name: 'App',
@@ -88,22 +92,26 @@ export default {
     Background,
     Logo,
     Introduction,
+    Announcement,
     Sponsors,
     Awards,
     Photos,
     Arrangement,
     Instruction,
     Questions,
+    MessageBoard,
   },
 
   data: () => ({
     fragments: [
+      { fragment: '#Announcement', name: '比赛公告' },
       { fragment: '#Sponsors', name: '特别鸣谢' },
       { fragment: '#Awards', name: '奖项设置' },
       { fragment: '#Revision', name: '往届风采' },
       { fragment: '#Arrangement', name: '赛程安排' },
       { fragment: '#Instructions', name: '选手须知' },
       { fragment: '#QA', name: '问题解答' },
+      { fragment: '#MessageBoard', name: '答疑留言' },
     ],
   }),
 }
