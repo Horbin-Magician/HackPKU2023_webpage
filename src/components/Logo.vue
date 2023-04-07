@@ -35,12 +35,7 @@ v-col.d-flex.flex-column.align-center
           v-card-title 错误
           v-card-text {{ downloadDialogErrInfo }}
     v-col
-      v-btn(
-        :color='styles["decoration-color"]'
-        dark
-        large
-        href='https://7465-test-5gifm62t1406c277-1253429680.tcb.qcloud.la/%E6%8A%80%E6%9C%AF%E8%AE%B2%E5%BA%A7.zip?sign=ed7d382a65d3877bb04658a8356f5797&t=1620460562'
-      )
+      v-btn(:color='styles["decoration-color"]' dark large href='#')
         v-icon(left) mdi-video
         | 企业技术答疑回放
 </template>
@@ -54,18 +49,22 @@ export default {
   },
   methods: {
     downloadHandler() {
-      fetch('/problemset')
-        .then((response) => response.json())
-        .then((response) => {
-          if (response.code === 0) {
-            const el = document.createElement('a')
-            el.href = response.url
-            el.download = 'problems.zip'
-            el.click()
-          } else {
-            this.downloadDialogErrInfo = '比赛尚未开始，请耐心等待！'
-            this.downloadDialog = true
+      fetch('https://hackpku.obs.cn-north-4.myhuaweicloud.com')
+        .then((response) => response.text())
+        .then((str) => new DOMParser().parseFromString(str, 'text/xml'))
+        .then((data) => {
+          let files = data.getElementsByTagName('Contents')
+          for (let i = 0, len = files.length; i < len; i++) {
+            let fileName = files[i].getElementsByTagName('Key')[0].innerHTML
+            if (fileName.indexOf('赛题') == 0) {
+              window.open(
+                'https://hackpku.obs.cn-north-4.myhuaweicloud.com/' + fileName
+              )
+              return
+            }
           }
+          this.downloadDialogErrInfo = '比赛尚未开始，请耐心等待！'
+          this.downloadDialog = true
         })
         .catch(() => {
           this.downloadDialogErrInfo = '未知错误，请重试或联系工作人员！'
