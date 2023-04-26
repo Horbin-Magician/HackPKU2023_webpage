@@ -5,7 +5,7 @@ v-col.d-flex.flex-column.align-center
     alt='HackPKU 2021 Logo'
     eager
   )
-  .text-h2.text-sm-h1.mt-4.mb-16.text-center.text-line-height-1_2 第四届
+  .text-h2.text-sm-h1.mt-4.mb-16.text-center.text-line-height-1_2 第七届
     br.hidden-lg-and-up
     |
     | 北京大学
