@@ -21,7 +21,7 @@ div
             |
             | ）
     v-timeline-item(
-      icon='mdi-account-plus'
+      icon='mdi-account-group-outline'
       fill-dot
       :color='styles["decoration-color"]'
       :large='!$vuetify.breakpoint.mobile'
@@ -32,7 +32,7 @@ div
           v-col
             | 赛事主办方联络选手
     v-timeline-item(
-      icon='mdi-account-plus'
+      icon='mdi-ribbon'
       fill-dot
       :color='styles["decoration-color"]'
       :large='!$vuetify.breakpoint.mobile'

@@ -38,7 +38,28 @@ v-app
               .d-flex.flex-wrap.justify-center.align-center
                 v-img.logo(
                   :src='require("./assets/logo-huawei.webp")'
+                  alt='九坤 Logo'
+                  max-width='200px'
+                  height='75px'
+                  contain
+                )
+                v-img.logo(
+                  :src='require("./assets/logo-huawei.webp")'
                   alt='华为 Logo'
+                  max-width='200px'
+                  height='75px'
+                  contain
+                )
+                v-img.logo(
+                  :src='require("./assets/logo-zhenfund.webp")'
+                  alt='真格 Logo'
+                  max-width='200px'
+                  height='75px'
+                  contain
+                )
+                v-img.logo(
+                  :src='require("./assets/logo-glodon.webp")'
+                  alt='广联达 Logo'
                   max-width='200px'
                   height='75px'
                   contain
@@ -51,29 +72,8 @@ v-app
                   contain
                 )
                 v-img.logo(
-                  :src='require("./assets/logo-zhenfund.webp")'
-                  alt='Hulu 公司的 Logo'
-                  max-width='200px'
-                  height='75px'
-                  contain
-                )
-                v-img.logo(
-                  :src='require("./assets/logo-glodon.webp")'
-                  alt='华为 Logo'
-                  max-width='200px'
-                  height='75px'
-                  contain
-                )
-                v-img.logo(
                   :src='require("./assets/logo-huawei.webp")'
-                  alt='Hulu 公司的 Logo'
-                  max-width='200px'
-                  height='75px'
-                  contain
-                )
-                v-img.logo(
-                  :src='require("./assets/logo-huawei.webp")'
-                  alt='Hulu 公司的 Logo'
+                  alt='山行 Logo'
                   max-width='200px'
                   height='75px'
                   contain
