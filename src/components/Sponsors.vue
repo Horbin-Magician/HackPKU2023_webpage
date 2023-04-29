@@ -3,7 +3,13 @@ div
   Section(main='特别鸣谢' bg='Sponsors')
   v-row
     v-col.d-flex.align-center(cols='12' sm='4')
-      v-img(:src='require("../assets/logo-huawei.webp")' alt='华为 Logo')
+      v-img(
+        :src='require("../assets/logo-huawei.webp")'
+        alt='华为 Logo'
+        max-width='300px'
+        height='300p'
+        padding='20px 50px'
+      )
     v-col
       h2 华为 Huawei
       v-col.text-line-height-2

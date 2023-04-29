@@ -21,7 +21,7 @@ div
   v-row
     v-col(cols='12' sm='4')
       v-card
-        v-card-title.grey.lighten-3.text-h5.d-flex.justify-end ￥2500
+        v-card-title.grey.lighten-3.text-h5.d-flex.justify-end ￥2000
           .glow
         v-container: v-col.text-h5 第四名至第八名
     v-col(cols='12' sm='4')
