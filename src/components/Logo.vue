@@ -1,11 +1,11 @@
 <template lang="pug">
 v-col.d-flex.flex-column.align-center
   v-img.logo(
-    :src='require("../assets/logo.webp")'
-    alt='HackPKU 2021 Logo'
+    :src='require("../assets/logo2.webp")'
+    alt='HackPKU 2023 Logo'
     eager
   )
-  .text-h2.text-sm-h1.mt-4.mb-16.text-center.text-line-height-1_2 第七届
+  .text-h2.text-sm-h1.mt-4.mb-16.text-center.text-line-height-1_2 第六届
     br.hidden-lg-and-up
     |
     | 北京大学
@@ -14,12 +14,6 @@ v-col.d-flex.flex-column.align-center
     | 新工科
     br
     | 黑客马拉松
-  v-row
-    v-col
-      .text-h4.text-sm-h3.text-center
-        | 本活动
-        br.hidden-sm-and-up
-        | 由快手独家赞助
   v-row
     v-col
       v-btn(

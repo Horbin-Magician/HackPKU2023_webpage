@@ -23,7 +23,7 @@ div
     v-col.col-12.col-md-6
       Number(
         :number='["40+", "800+"]'
-        description='过去 3 届 HackPKU 中，共有来自全国各地 40 余所高校的 800 余支各具特色的队伍报名并参加比赛，HackPKU 得到广大选手的一致好评'
+        description='过去 5 届 HackPKU 中，共有来自全国各地 40 余所高校的 800 余支各具特色的队伍报名并参加比赛，HackPKU 得到广大选手的一致好评'
       )
     v-col.col-6.col-md-3
       Number(
@@ -32,13 +32,8 @@ div
       )
     v-col.col-6.col-md-3
       Number(
-        :number='["10 万"]'
-        description='共有 30 余支队伍的 100 余名同学获奖，历届 HackPKU 累计奖金超过￥100,000'
-      )
-    v-col.col-12
-      Number(
-        :number='["1"]'
-        description='HackPKU 2021 第 1 次线上举办，活动奖金更丰厚，活动形式更多样，更多“第一”，等你来创造……'
+        :number='["25 万+"]'
+        description='共有 50 余支队伍的 150 余名同学获奖，历届 HackPKU 累计奖金超过￥250,000'
       )
 </template>
 

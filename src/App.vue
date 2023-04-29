@@ -8,12 +8,12 @@ v-app
       Logo
       Introduction#Introduction
       Announcement#Announcement
-      Sponsors#Sponsors
       Awards#Awards
       Photos#Revision
       Arrangement#Arrangement
       Instruction#Instructions
       Questions#QA
+      Sponsors#Sponsors
       MessageBoard#MessageBoard
 
   v-footer(padless)
@@ -34,34 +34,38 @@ v-app
               br
               | 2021 © 北京大学信息科学技术学院学生会 HackPKU 2021 组委会
             .d-flex.flex-column.justify-center.align-center.ml-sm-4.mt-2.mt-sm-0
-              b.text-h6.mb-2 独家冠名
-              .d-flex.flex-wrap.justify-center.align-center
-                v-img.logo(
-                  :src='require("./assets/logo-kuaishou.webp")'
-                  alt='快手公司的 Logo'
-                  max-width='150px'
-                  height='75px'
-                  contain
-                )
-            .d-flex.flex-column.justify-center.align-center.ml-sm-4.mt-2.mt-sm-0
               b.text-h6.mb-2 特约赞助
               .d-flex.flex-wrap.justify-center.align-center
                 v-img.logo(
-                  :src='require("./assets/logo-qingcloud.webp")'
-                  alt='青云公司的 Logo'
+                  :src='require("./assets/logo-huawei.webp")'
+                  alt='华为 Logo'
                   max-width='150px'
                   height='75px'
                   contain
                 )
                 v-img.logo(
-                  :src='require("./assets/logo-tuyoo.webp")'
-                  alt='途游公司的 Logo'
+                  :src='require("./assets/logo-tencent.webp")'
+                  alt='腾讯 Logo'
                   max-width='150px'
                   height='75px'
                   contain
                 )
                 v-img.logo(
-                  :src='require("./assets/logo-hulu.webp")'
+                  :src='require("./assets/logo-zhenfund.webp")'
+                  alt='Hulu 公司的 Logo'
+                  max-width='150px'
+                  height='75px'
+                  contain
+                )
+                v-img.logo(
+                  :src='require("./assets/logo-glodon.webp")'
+                  alt='华为 Logo'
+                  max-width='150px'
+                  height='75px'
+                  contain
+                )
+                v-img.logo(
+                  :src='require("./assets/logo-huawei.webp")'
                   alt='Hulu 公司的 Logo'
                   max-width='150px'
                   height='75px'
@@ -76,12 +80,12 @@ import Background from './components/Background'
 import Logo from './components/Logo'
 import Introduction from './components/Introduction'
 import Announcement from './components/Announcement'
-import Sponsors from './components/Sponsors'
 import Awards from './components/Awards'
 import Photos from './components/Photos'
 import Arrangement from './components/Arrangement'
 import Instruction from './components/Instruction'
 import Questions from './components/Questions'
+import Sponsors from './components/Sponsors'
 import MessageBoard from './components/MessageBoard'
 
 export default {
@@ -93,24 +97,24 @@ export default {
     Logo,
     Introduction,
     Announcement,
-    Sponsors,
     Awards,
     Photos,
     Arrangement,
     Instruction,
     Questions,
+    Sponsors,
     MessageBoard,
   },
 
   data: () => ({
     fragments: [
       { fragment: '#Announcement', name: '比赛公告' },
-      { fragment: '#Sponsors', name: '特别鸣谢' },
       { fragment: '#Awards', name: '奖项设置' },
       { fragment: '#Revision', name: '往届风采' },
       { fragment: '#Arrangement', name: '赛程安排' },
       { fragment: '#Instructions', name: '选手须知' },
       { fragment: '#QA', name: '问题解答' },
+      { fragment: '#Sponsors', name: '特别鸣谢' },
       { fragment: '#MessageBoard', name: '答疑留言' },
     ],
   }),
