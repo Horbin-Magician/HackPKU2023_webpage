@@ -18,7 +18,7 @@ div
       )
       //- v-card-title.text-center
       v-col.text-center.h3 {{ dialog_photo.description }}
-  v-col.text--secondary * 左右{{ $vuetify.breakpoint.mobile ? "划" : "拖" }}动查看更多，点击查看大图
+  v-col.text--secondary * 左右{{ $vuetify.breakpoint.mobile ? '划' : '拖' }}动查看更多，点击查看大图
   v-row
     v-col.col-12.col-md-6
       Number(
