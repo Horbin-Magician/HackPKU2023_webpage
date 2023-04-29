@@ -1,7 +1,7 @@
 <template lang="pug">
 v-app
   Background
-  Header(logo='HackPKU 2021' :fragments='fragments')
+  Header(logo='HackPKU 2023' :fragments='fragments')
 
   v-main
     v-container
@@ -32,7 +32,7 @@ v-app
               br
               | 共青团北京大学信息科学技术学院
               br
-              | 2021 © 北京大学信息科学技术学院学生会 HackPKU 2021 组委会
+              | 2023 © 北京大学信息科学技术学院学生会 HackPKU 2023 组委会
             .d-flex.flex-column.justify-center.align-center.ml-sm-4.mt-2.mt-sm-0
               b.text-h6.mb-2 特约赞助
               .d-flex.flex-wrap.justify-center.align-center
