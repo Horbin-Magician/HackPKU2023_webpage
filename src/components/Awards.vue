@@ -47,7 +47,6 @@ div
   v-col.text-h5 ——参赛选手将有机会参与华为黑客马拉松等赛事，同技术大佬华山论剑
   v-col.text-h5 企业的关注！
   v-col.text-h5 ——优秀选手将与大赛评委深入交流，受到大厂HR的追踪关注
-
 </template>
 
 <script>
