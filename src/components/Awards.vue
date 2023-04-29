@@ -10,18 +10,18 @@ div
         v-container: v-col.text-h5 第一名
     v-col(cols='12' sm='4')
       v-card
-        v-card-title.blue-grey.lighten-3.text-h4.d-flex.justify-end ￥10000
+        v-card-title.blue-grey.lighten-3.text-h4.d-flex.justify-end: b ￥10000
           .glow
         v-container: v-col.text-h5 第二名
     v-col(cols='12' sm='4')
       v-card
-        v-card-title.deep-orange.darken-2.text-h4.d-flex.justify-end ￥5000
+        v-card-title.deep-orange.darken-2.text-h4.d-flex.justify-end: b ￥5000
           .glow
         v-container: v-col.text-h5 第三名
   v-row
     v-col(cols='12' sm='4')
       v-card
-        v-card-title.grey.lighten-3.text-h5.d-flex.justify-end ￥2000
+        v-card-title.grey.lighten-3.text-h4.d-flex.justify-end: b ￥2000
           .glow
         v-container: v-col.text-h5 第四名至第八名
     v-col(cols='12' sm='4')
