@@ -39,35 +39,42 @@ v-app
                 v-img.logo(
                   :src='require("./assets/logo-huawei.webp")'
                   alt='华为 Logo'
-                  max-width='150px'
+                  max-width='200px'
                   height='75px'
                   contain
                 )
                 v-img.logo(
                   :src='require("./assets/logo-tencent.webp")'
                   alt='腾讯 Logo'
-                  max-width='150px'
+                  max-width='200px'
                   height='75px'
                   contain
                 )
                 v-img.logo(
                   :src='require("./assets/logo-zhenfund.webp")'
                   alt='Hulu 公司的 Logo'
-                  max-width='150px'
+                  max-width='200px'
                   height='75px'
                   contain
                 )
                 v-img.logo(
                   :src='require("./assets/logo-glodon.webp")'
                   alt='华为 Logo'
-                  max-width='150px'
+                  max-width='200px'
                   height='75px'
                   contain
                 )
                 v-img.logo(
                   :src='require("./assets/logo-huawei.webp")'
                   alt='Hulu 公司的 Logo'
-                  max-width='150px'
+                  max-width='200px'
+                  height='75px'
+                  contain
+                )
+                v-img.logo(
+                  :src='require("./assets/logo-huawei.webp")'
+                  alt='Hulu 公司的 Logo'
+                  max-width='200px'
                   height='75px'
                   contain
                 )
@@ -125,10 +132,6 @@ export default {
 @media (min-width: 1264px) {
   .container {
     max-width: 1185px;
-  }
-  .logo {
-    width: 100%;
-    max-width: 400px;
   }
 }
 </style>
