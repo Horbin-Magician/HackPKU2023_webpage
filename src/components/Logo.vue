@@ -115,7 +115,7 @@ export default {
 <style scoped>
 .logo {
   width: 100%;
-  max-width: 400px;
+  max-width: 1000px;
 }
 .text-line-height-1_2 {
   line-height: 1.2;
