@@ -37,7 +37,7 @@ v-app
               b.text-h6.mb-2 特约赞助
               .d-flex.flex-wrap.justify-center.align-center
                 v-img.logo(
-                  :src='require("./assets/logo-huawei.webp")'
+                  :src='require("./assets/logo-ubiquant.webp")'
                   alt='九坤 Logo'
                   max-width='200px'
                   height='75px'
