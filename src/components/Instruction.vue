@@ -13,7 +13,8 @@ div
           | ，于
           b 5月1日0:00至5月15日24:00
           | 将简历发送至大赛指定邮箱
-          a(href='mailto:hackpku@outlook.com') hackpku@outlook.com。
+          a(href='mailto:hackpku@outlook.com') hackpku@outlook.com
+          | 。
         li
           | 选手依据简历模板填写简历。简历分为
           b 个人部分与团队部分
@@ -43,11 +44,7 @@ div
     v-col
       Subsection 赛制说明
       ol.details
-        | 本次比赛为赛道制，共设2个赛道，各赛道内容不同，独立评奖，选手按照赛道要求自行组队参赛。每个队伍只能参加一个赛道。
-        br
-        | 赛道介绍:
-        li
-        li
+      | 报名正式开始前将会公布，敬请期待！
 </template>
 
 <script>
