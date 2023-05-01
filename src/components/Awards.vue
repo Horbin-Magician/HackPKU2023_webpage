@@ -34,19 +34,31 @@ div
         v-card-title.special.white--text.d-flex.justify-end HackPKU 精美纪念礼包
         v-container: v-col.text-h5 所有参赛者
 
-  v-col.text--secondary * 以上是单个赛道的奖金安排，若无特殊情况，每个赛道的奖金设置相同且互相独立
-  v-col.text--secondary * 奖金按队伍分发，纪念品按参赛者分发
+  v-col.text--secondary 
+    | * 以上是单个赛道的奖金安排，若无特殊情况，每个赛道的奖金设置相同且互相独立
+    br
+    | * 奖金按队伍分发，纪念品按参赛者分发
   br
 
   Subsection 参赛福利
-  v-col.text-h5 企业workshop！
-  v-col.text-h5 ——企业专家将为参赛选手开设赛前workshop，面对面分享技术细节
-  v-col.text-h5 参访入场劵！
-  v-col.text-h5 ——参赛选手将有机会进入腾讯、广联达等公司参访
-  v-col.text-h5 更高的平台！
-  v-col.text-h5 ——参赛选手将有机会参与华为黑客马拉松等赛事，同技术大佬华山论剑
-  v-col.text-h5 企业的关注！
-  v-col.text-h5 ——优秀选手将与大赛评委深入交流，受到大厂HR的追踪关注
+  v-col.text-line-height-2
+    ol
+      li
+        b 企业workshop！
+        br
+        | 企业专家将为参赛选手开设赛前workshop，面对面分享技术细节
+      li
+        b 参访入场劵！
+        br
+        | 参赛选手将有机会进入腾讯、广联达等公司参访
+      li
+        b 更高的平台！
+        br
+        | 参赛选手将有机会参与华为黑客马拉松等赛事，同技术大佬华山论剑
+      li
+        b 企业的关注！
+        br
+        | 优秀选手将与大赛评委深入交流，受到大厂HR的追踪关注
 </template>
 
 <script>
@@ -87,5 +99,8 @@ export default {
 }
 .special {
   background-color: $decoration-color;
+}
+.text-line-height-2 {
+  line-height: 2;
 }
 </style>

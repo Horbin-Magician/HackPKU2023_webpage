@@ -9,7 +9,7 @@ div
       :large='!$vuetify.breakpoint.mobile'
     )
       v-card
-        v-card-title.grey.lighten-3 2023 年 5 月 1 日 00:00 至 5 月 15 日 24:00
+        v-card-title.grey.lighten-3 2023 年 5 月 5 日 00:00 至 5 月 15 日 24:00
         v-container
           v-col
             | 选手自行组队报名，依据模板填写简历并提交至

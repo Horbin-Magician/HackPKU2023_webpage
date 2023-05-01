@@ -11,7 +11,7 @@ div
           | 参赛选手请
           b 以队伍为单位
           | ，于
-          b 5月1日0:00至5月15日24:00
+          b 5月5日0:00至5月15日24:00
           | 将简历发送至大赛指定邮箱
           a(href='mailto:hackpku@outlook.com') hackpku@outlook.com
           | 。

@@ -65,15 +65,15 @@ v-app
                   contain
                 )
                 v-img.logo(
-                  :src='require("./assets/logo-tencent.webp")'
-                  alt='腾讯 Logo'
+                  :src='require("./assets/logo-hikecapital.webp")'
+                  alt='山行 Logo'
                   max-width='200px'
                   height='75px'
                   contain
                 )
                 v-img.logo(
-                  :src='require("./assets/logo-hikecapital.webp")'
-                  alt='山行 Logo'
+                  :src='require("./assets/logo-tencent.webp")'
+                  alt='腾讯 Logo'
                   max-width='200px'
                   height='75px'
                   contain

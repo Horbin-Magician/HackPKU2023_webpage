@@ -6232,9 +6232,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hackpku2021@workspace:.":
+"hackpku2023@workspace:.":
   version: 0.0.0-use.local
-  resolution: "hackpku2021@workspace:."
+  resolution: "hackpku2023@workspace:."
   dependencies:
     "@prettier/plugin-pug": ^1.13.5
     "@vue/cli-plugin-babel": ~4.5.0
