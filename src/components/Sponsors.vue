@@ -44,7 +44,10 @@ div
         | 腾讯是一家世界领先的互联网科技公司，用创新的产品和服务提升全球各地人们的生活品质。腾讯成立于1998年，总部位于中国深圳。公司一直秉承科技向善的宗旨。我们的通信和社交服务连接全球逾10亿人，帮助他们与亲友联系，畅享便捷的出行、支付和娱乐生活。腾讯发行多款风靡全球的电子游戏及其他优质数字内容，为全球用户带来丰富的互动娱乐体验。腾讯还提供云计算、广告、金融科技等一系列企业服务，支持合作伙伴实现数字化转型，促进业务发展。
   v-row
     v-col.d-flex.align-center(cols='12' sm='4')
-      v-img(:src='require("../assets/logo-tencent.webp")' alt='腾讯 Logo')
+      v-img.logo_hikecapital(
+        :src='require("../assets/logo-hikecapital.webp")'
+        alt='山行资本 Logo'
+      )
     v-col
       h2 山行资本 HIKE Capital
       v-col.text-line-height-2
@@ -72,6 +75,10 @@ export default {
   line-height: 2;
 }
 .logo_huawei {
+  max-width: 300px;
+  margin: 0 auto;
+}
+.logo_hikecapital {
   max-width: 300px;
   margin: 0 auto;
 }

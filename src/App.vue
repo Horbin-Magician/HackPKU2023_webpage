@@ -72,7 +72,7 @@ v-app
                   contain
                 )
                 v-img.logo(
-                  :src='require("./assets/logo-huawei.webp")'
+                  :src='require("./assets/logo-hikecapital.webp")'
                   alt='山行 Logo'
                   max-width='200px'
                   height='75px'
