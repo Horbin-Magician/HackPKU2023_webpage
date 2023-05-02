@@ -17,7 +17,7 @@ div
             a(href='mailto:hackpku@outlook.com') hackpku@outlook.com
             | （详见下方
             |
-            a(href='#Instruction') 选手须知
+            a(href='#Instructions') 选手须知
             |
             | ）
     v-timeline-item(
