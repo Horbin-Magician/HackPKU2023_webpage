@@ -1,16 +1,15 @@
 <template lang="pug">
 div
   Section(main='比赛公告' bg='Announcement')
-  v-list(lines='one')
+  v-card(lines='one')
     v-list-item(
       v-for='announcement in announcements'
       :key='announcement.title'
     ) 
       v-list-item-content
-        v-list-item-title {{ announcement.title }}
+        v-list-item-title {{ announcement.title }} {{ announcement.date }}
         v-list-item-subtitle {{ announcement.content }}
-        v-list-item-subtitle {{ announcement.date }}
-  v-list
+    v-list-item(v-if='announcements.length == 0'): v-col.text-center 暂无公告
 </template>
 
 <script>
@@ -33,7 +32,6 @@ export default {
       )
         .then((response) => response.json())
         .then((data) => {
-          console.log(data)
           for (let i = 0, len = data.length; i < len; i++) {
             let date = data[i]['updated_at']
             let message = data[i]['body'].split('\r\n')
@@ -46,6 +44,18 @@ export default {
             })
           }
         })
+      // this.announcements = [
+      //   {
+      //     title: '第一条公告',
+      //     content: '这是第一条公告',
+      //     date: '20230502',
+      //   },
+      //   {
+      //     title: '第二条公告',
+      //     content: '这是第二条公告',
+      //     date: '20230503',
+      //   },
+      // ]
     },
   },
 }
