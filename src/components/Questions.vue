@@ -47,6 +47,16 @@ div
     v-card-title.grey.lighten-3 Q：想参赛但是没有找到合适的队友怎么办？
     v-container
       v-col A：扫码进入官方组队群，与来自五湖四海的参赛者们自由组队，开启专属于你的HackPKU之旅！
+        a(@click='showQR = true') 点击查看群二维码
+  v-dialog(v-model='showQR' max-width='300')
+    v-card
+      v-card-title 官方组队群
+      v-card-text
+        v-img(
+          :src='require("../assets/QR.webp")'
+          alt='HackPKU 2023 Logo'
+          contain
+        )
 </template>
 
 <script>
@@ -62,6 +72,7 @@ export default {
   data() {
     return {
       styles,
+      showQR: false,
     }
   },
 }
