@@ -80,22 +80,22 @@ export default {
   },
   methods: {
     downloadHandler(flag = '赛题') {
-      this.files = []
-      let root_url =
-        'https://api.github.com/repos/lcpu-club/HackPKU2023_webpage/contents/files/'
-      fetch(root_url + flag)
-        .then((response) => response.json())
+      let root_url = 'https://hackpku.obs.cn-north-4.myhuaweicloud.com/'
+      fetch(root_url + '?prefix=' + flag + '/')
+        .then((response) => response.text())
+        .then((str) => new DOMParser().parseFromString(str, 'text/xml'))
         .then((data) => {
-          for (let i = 0, len = data.length; i < len; i++) {
-            let file = {
-              filename: data[i]['name'],
-              size: data[i]['size'],
-              url: data[i]['download_url'].replace(
-                'raw.githubusercontent.com',
-                'raw.staticdn.net' // or use "raw.staticdn.net"
-              ),
+          this.files = []
+          let files = data.getElementsByTagName('Contents')
+          for (let i = 0, len = files.length; i < len; i++) {
+            let fileName = files[i].getElementsByTagName('Key')[0].innerHTML
+            let size = files[i].getElementsByTagName('Size')[0].innerHTML
+            let url = root_url + fileName
+            fileName = fileName.substring(flag.length + 1)
+            if (fileName.length > 0) {
+              let file = { filename: fileName, size: size, url: url }
+              this.files.push(file)
             }
-            this.files.push(file)
           }
           if (this.files.length == 0) {
             this.errorDialogErrInfo =
