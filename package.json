@@ -2,6 +2,7 @@
   "name": "hackpku2023",
   "version": "0.1.0",
   "private": true,
+  "packageManager": "yarn@1.22.19",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
