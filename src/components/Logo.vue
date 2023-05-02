@@ -90,7 +90,10 @@ export default {
             let file = {
               filename: data[i]['name'],
               size: data[i]['size'],
-              url: data[i]['download_url'],
+              url: data[i]['download_url'].replace(
+                'raw.githubusercontent.com',
+                'raw.staticdn.net' // or use "raw.staticdn.net"
+              ),
             }
             this.files.push(file)
           }
