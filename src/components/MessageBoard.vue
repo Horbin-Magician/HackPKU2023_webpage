@@ -31,7 +31,7 @@ export default {
         clientID: '0381668c42597aa39ecc',
         clientSecret: '8ba8d5c7c869d8722a82054bbcc2032f814b8cf2',
         repo: 'HackPKU2023_webpage',
-        owner: 'Horbin-Magician',
+        owner: 'lcpu-club',
         title: 'HackPKU2023_MessageBoard',
         id: 'MessageBoard',
         admin: ['Horbin-Magician'],
