@@ -1,7 +1,7 @@
 <template lang="pug">
 div
   Section(main='奖项设置' bg='Award Settings')
-  Subsection 现金奖池
+  Subsection 基础奖项
   v-row 
     v-col(cols='12' sm='4')
       v-card
@@ -32,14 +32,21 @@ div
     v-col(cols='12' sm='4')
       v-card
         v-card-title.special.white--text.d-flex.justify-end HackPKU 精美纪念礼包
+          .glow
         v-container: v-col.text-h5 所有参赛者
-
   v-col.text--secondary 
     | * 以上是单个赛道的奖金安排，若无特殊情况，每个赛道的奖金设置相同且互相独立
     br
     | * 奖金按队伍分发，纪念品按参赛者分发
   br
-
+  Subsection 真格基金专项奖
+  v-row
+    v-col(cols='12' sm='4')
+      v-card
+        v-card-title.deep-orange.darken-2.text-h4.d-flex.justify-end: b ￥5000
+          .glow
+        v-container: v-col.text-h5 共三名（三支队伍）
+  br
   Subsection 参赛福利
   v-col.text-line-height-2
     ol
