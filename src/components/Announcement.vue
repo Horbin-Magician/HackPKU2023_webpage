@@ -1,15 +1,15 @@
 <template lang="pug">
 div
   Section(main='比赛公告' bg='Announcement')
-  v-card(lines='one')
-    v-list-item(
+  v-expansion-panels(focusable v-model='panel')
+    v-expansion-panel(
       v-for='announcement in announcements'
       :key='announcement.title'
-    ) 
-      v-list-item-content
-        v-list-item-title {{ announcement.title }} {{ announcement.date }}
-        v-list-item-subtitle {{ announcement.content }}
-    v-list-item(v-if='announcements.length == 0'): v-col.text-center 暂无公告
+    )
+      v-expansion-panel-header
+        b {{ announcement.title }} {{ announcement.date }}
+      v-expansion-panel-content
+        .text-line-height-2(v-html='announcement.content')
 </template>
 
 <script>
@@ -20,7 +20,10 @@ export default {
     Section,
   },
   data() {
-    return { announcements: [] }
+    return {
+      announcements: [],
+      panel: 0,
+    }
   },
   mounted() {
     this.init()
@@ -28,34 +31,19 @@ export default {
   methods: {
     init() {
       fetch(
-        'https://api.github.com/repos/Horbin-Magician/HackPKU2023_webpage/issues/3/comments'
+        'https://hackpku.obs.cn-north-4.myhuaweicloud.com/Announcement.json'
       )
         .then((response) => response.json())
         .then((data) => {
+          console.log(data)
           for (let i = 0, len = data.length; i < len; i++) {
-            let date = data[i]['updated_at']
-            let message = data[i]['body'].split('\r\n')
-            let title = message[0]
-            let content = message[1]
             this.announcements.push({
-              title: title,
-              content: content,
-              date: date,
+              title: data[i]['title'],
+              content: data[i]['content'],
+              date: data[i]['date'],
             })
           }
         })
-      // this.announcements = [
-      //   {
-      //     title: '第一条公告',
-      //     content: '这是第一条公告',
-      //     date: '20230502',
-      //   },
-      //   {
-      //     title: '第二条公告',
-      //     content: '这是第二条公告',
-      //     date: '20230503',
-      //   },
-      // ]
     },
   },
 }

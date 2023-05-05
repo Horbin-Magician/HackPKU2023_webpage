@@ -14,7 +14,7 @@ div
               li 赛道通知&答疑群，每个赛道各一个，用于各赛道的答疑和勘误。
           li
             b 大赛官方网站：
-            a(href='https://hackpku.com') https://hackpku.com
+            a(href='https://www.hackpku.com') https://www.hackpku.com
             ol(type='a')
               li 选手可以通过网站下载各种文件，例如建立、本手册、赛题和技术支持等。
               li 开闭幕式线上会议的录制文件也会上传到网站。
